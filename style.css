@@ -1,0 +1,378 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+header h2 {
+  font-size: 40px;
+  font-weight: 500px;
+  color: #A9B388;
+  text-align: center;
+}
+/* Navbar */
+nav {
+  background-color: #A9B388;
+  padding: 5px;
+  top: 0;
+}
+
+nav a{
+  font-size: 18px;
+  font-weight: 400px;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+nav li{
+  list-style-type: none;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+/*End Navbar*/
+
+
+/* Isi */
+.content {
+  padding: 10px;
+  background-image: url(assets/books.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.content h1 {
+  color: black;
+  font-size: 40px;
+}
+
+.content p {
+  color: black;
+  font-size: 20px;
+}
+
+/* Main */
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+main > * {
+  flex: 0 0 18%;
+  margin-bottom: 20px;
+}
+
+/* Card */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #A9B388;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px;
+  align-items: center;
+  grid-gap: 30px;
+}
+
+img {
+  object-fit: cover;
+}
+
+.grid > article {
+  box-shadow: 10px 5px 5px 0px whitesmoke;
+  border-radius: 20px;
+  text-align: center;
+  background: whitesmoke;
+  width: 250px;
+  transition: transform;
+}
+
+.grid > article img {
+  margin-top: 10px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.grid > article:hover {
+  transform: scale(1.1);
+}
+
+.grid button {
+  background-color: #A9B388;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+/*Kontak*/
+.kontak img{
+  align-items: center;
+}
+.kontak h3 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #A9B388;
+}
+.kontak figcaption{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #A9B388;
+}
+/*End Kontak*/
+
+/* About */
+#about h3 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #A9B388;
+}
+
+#about p {
+  text-align: justify;
+  margin: 20px;
+  line-height: 25px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-content div {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Pesan */
+#pesan h3 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #A9B388;
+}
+
+/* Kontak */
+.kontak img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #A9B388;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #A9B388;
+}
+
+/* Navbar active javascript*/
+.aktif {
+  background-color: #A9B388;
+  border-bottom: black 1px solid;
+}
+
+/* Order */
+.order-content h3{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #A9B388;
+}
+.order-content form {
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.order-content form .row {
+  display: flex;
+  gap: 15px;
+}
+
+.order-content form .row .col {
+  flex: 1;
+}
+
+.order-content form .row .col .title {
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.order-content form .row .col .inputBox {
+  margin: 15px 0;
+}
+
+.order-content form .row .col .inputBox span {
+  display: block;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.order-content form .row .col .inputBox input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.order-content .submit-btn {
+  width: 50%;
+  text-align: center;
+  margin-top: 10px;
+  background-color: #A9B388;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.order-content .submit-btn:hover {
+  background-color: #A9B388;
+}
+/*End Isi*/
+
+/* Media Query */
+@media only screen and (max-width: 1200px) {
+  header.navbar-container {
+      flex-direction: column;
+      align-items: stretch;
+      text-align: center;
+  }
+
+  header.navbar-container .nav-list ul {
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+  header h2 {
+      margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  main > * {
+      flex: 0 0 100%;
+      margin-bottom: 20px;
+  }
+
+  .grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* Media Query for About Section */
+@media only screen and (max-width: 1200px) {
+  .about-content {
+      flex-direction: column;
+  }
+
+  .about-content div {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .about-image img {
+      margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-content {
+      flex-direction: column-reverse;
+  }
+
+  .about-content div {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .about-image img {
+      margin-top: 20px;
+  }
+}
+

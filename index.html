@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Book shop </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+          <h2>Shakespeare's Book Shop</h2>
+      <!--Navigasi bar-->
+          <nav>
+          <ul>
+            <li><a href="#about" class="menu">Tentang</a></li>
+            <li><a href="#pesan" class="menu">Pesan</a></li>
+            <li><a href="#order" class="menu">Beli</a></li>
+            <li><a href="#kontak" class="menu">Kontak</a></li>
+          </ul>
+        </nav>
+        <!-- End of Navigation Bar -->
+       </header>
+       
+       <!--Bagian Isi-->
+        <main>
+          <div>
+            <article id="beranda">
+            <div class="content">
+                <div class="content-description">
+                  <h1 class="title">Shakespeare's Book Shop</h1>
+                  <p>Kami melayani pembelian buku legal dan terpercaya,</p>
+                  <p>dan siap mengantarkan ke berbagai kota</p>
+                </div>
+                </div>
+          <div>
+            </article>
+          <article id="about" class="card">
+            <div class="about-content">
+                <div>
+                    <h3>Tentang Kami</h3>
+                    <p>Selamat datang di Shakespares Book Shop, destinasi terpercaya Anda untuk 
+                        mengeksplorasi dunia literasi dan pengetahuan. Sejak didirikan 
+                        pada tahun 2022, kami dengan bangga telah menyediakan 
+                        akses kepada para pecinta buku untuk menjelajahi ragam kisah, pengetahuan, dan inspirasi.
+                    </p>
+                    <p>
+                        Di Shakespares, kami menghargai kekuatan kata-kata dan keyakinan bahwa buku adalah 
+                        jendela untuk memahami dunia di sekitar kita. Kami berkomitmen untuk memberikan 
+                        pengalaman belanja yang memuaskan dan memperluas cakrawala intelektual Anda melalui
+                         koleksi buku yang luas dan beragam.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/background.jpg" alt="">
+                </div>
+            </div>
+        </article>
+        
+            <article id="pesan" class="card">
+                <h3>Pesan</h3>
+                <div class="container">
+                    <div class="grid">
+                        <article>
+                            <img src="assets/buku1.jpg" width="200px" height="200px">
+                            <div class="konten">
+                                <h4>Atomic Habits</h4>
+                                <button><a href="#order">Pesan Sekarang</a></button>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/buku2.png" width="200px" height="200px">
+                            <div class="konten">
+                                <h4>Sebuah Seni Bersikap Bodo Amat</h4>
+                                <button><a href="#order">Pesan Sekarang</a></button>
+                        </div>
+                        </article>
+                        <article>
+                            <img src="assets/buku3.jpeg" width="200px" height="200px">
+                            <div class="konten">
+                                <h4>Madilog: Tan Malaka</h4>
+                                <button><a href="#order">Pesan Sekarang</a></button>
+                        </div>
+                        </article>
+                        <article>
+                            <img src="assets/buku4.jpeg" width="200px" height="200px">
+                            <div class="konten">
+                                <h4>Catatan Seorang Demonstran</h4>
+                                <button><a href="#order">Pesan Sekarang</a></button>
+                        </div>
+                        </article>
+                        <article>
+                            <img src="assets/buku5.jpg" width="200px" height="200px">
+                            <div class="konten">
+                                <h4>Cantik itu Luka</h4>
+                                <button><a href="#order">Pesan Sekarang</a></button>
+                        </div>
+                        </article>
+                        <article>
+                            <img src="assets/buku6.jpg" width="200px" height="200px">
+                            <div class="konten">
+                                <h4>Gadis Kretek</h4>
+                                <button><a href="#order">Pesan Sekarang</a></button>
+                        </article>
+                      </div>
+                </div>
+        </article>
+
+        <article id="order" class="card">
+            <div class="order-content">
+              <div>
+                <h3>Pesan Sekarang</h3>
+                <form action="">
+                  <div class="row">
+                    <!-- Data Pemesan -->
+                    <div class="col">
+                      <h3 class="title">Data Pemesan</h3>
+                      <div class="inputBox">
+                        <span>Nama Lengkap: </span>
+                        <input type="text" placeholder="Nama">
+                      </div>
+                      <div class="inputBox">
+                        <span>Judul Buku: </span>
+                        <input type="text" placeholder="Atomic Habits">
+                      </div>
+                      <div class="inputBox">
+                        <span>Email: </span>
+                        <input type="email" placeholder="example@mail.com">
+                      </div>
+                      <div class="inputBox">
+                        <span>No. Telepon: </span>
+                        <input type="text" placeholder="+628123456789">
+                      </div>
+                      <div class="inputBox">
+                        <span>Alamat: </span>
+                        <input type="address" placeholder="Jalan-Nomor Rumah">
+                      </div>
+                      <div class="flex">
+                        <div class="inputBox">
+                          <span>Kota: </span>
+                          <input type="text" placeholder="Surabaya">
+                        </div>
+                        <div class="inputBox">
+                          <span>Kode Pos: </span>
+                          <input type="text" placeholder="528000">
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- Pembayaran -->
+                    <div class="col">
+                      <h3 class="title">Pembayaran</h3>
+                      <div class="inputBox">
+                        <span>Nama Pemilik: </span>
+                        <input type="text" placeholder="Nama">
+                      </div>
+                      <div class="inputBox">
+                        <span>No-Rek: </span>
+                        <input type="text" placeholder="1100-0000-0000-0000">
+                      </div>
+                      <div class="inputBox">
+                        <span>Tanggal Pembayaran: </span>
+                        <input type="date" placeholder="01-01-2022">
+                      </div>
+                      <div class="inputBox">
+                        <span>Keterangan: </span>
+                        <input type="text" placeholder="Sudah Lunas">
+                      </div>
+                    </div>
+                  </div>
+                  <input type="submit" value="Kirim" class="submit-btn">
+                </form>
+              </div>
+            </div>
+          </article>
+    </article>
+</div>
+    
+    <!-- Konten samping -->
+    <aside id="kontak" class="card">
+        <article class="kontak">
+            <h3>Hubungi saya</h3>
+            <figure>
+                <img src="assets/aku.jpeg" alt="Profile Image">
+                <figcaption>Maharani Sabila</figcaption>
+            </figure>
+        </article>
+        <section>
+            <!-- Konten baru -->
+            <h4>Sampaikan keluhan Anda</h4>
+            <form>
+                <div>
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" name="user_name" placeholder="Nama Lengkap" required>
+                </div>
+                <div>
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" name="user_email" placeholder="example@mail.com" required>
+                </div>
+                <div>
+                    <label for="msg">Kesan & Pesan</label>
+                    <textarea id="msg" name="user_message" required></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">Kirim</button>
+                    <button type="submit">Batal</button>
+                </div>
+            </form>
+        </section>
+    </aside>
+            
+        </main>
+    
+    <footer>
+        <p>Copyright &copy; 2023 - Shakespeares book shop</p>
+    </footer>
+
+    <!-- Javascript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const ul = document.querySelector(".nav-list ul");
+    
+        // Handler untuk menanggapi perubahan hash
+        window.addEventListener("hashchange", highlightActiveNavItem);
+    
+        // Fungsi untuk menandai elemen navigasi yang aktif
+        function highlightActiveNavItem() {
+            const hash = window.location.hash.substr(1); // Mengambil hash tanpa tanda pagar
+            const targetNavItem = document.querySelector(`.menu[href="#${hash}"]`);
+    
+            // Menghapus kelas aktif dari semua elemen
+            document.querySelectorAll(".menu").forEach(function (a) {
+            a.classList.remove("aktif");
+            });
+    
+            // Menambahkan kelas aktif ke elemen yang sesuai
+            if (targetNavItem) {
+            targetNavItem.classList.add("aktif");
+            }
+        }
+    
+        // Memanggil fungsi saat halaman dimuat untuk menandai elemen awal
+        highlightActiveNavItem();
+        });
+    </script>
+    <!-- End of Javascript -->
+</body>
+</html>
